@@ -1,7 +1,88 @@
 ---
-title: "Dashboard"
+title: "plotly"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r load_dataset}
+set.seed(1)
+noaa = p8105.datasets::ny_noaa %>% 
+  janitor::clean_names() %>% 
+  separate(date, into = c("year", "month", "day"), sep = "-") %>% 
+  filter(!is.na(tmax), !is.na(tmin), !is.na(snow), !is.na(snwd), !is.na(prcp)) %>% 
+  mutate(pcrp = prcp / 10,
+         tmax = as.integer(tmax)/ 10,
+         tmin = as.integer(tmin)/ 10,
+         year = as.integer(year),
+         month = as.integer(month),
+         day = as.integer(day)) 
+```
+
+
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r tmax_vs_tmin, fig.width = 4, fig.height = 4}
+temp_plot = noaa %>% 
+  ggplot(aes(x = tmax, y = tmin)) +
+  geom_hex() +
+  labs(
+    y = "Minimum Temperature(ºC)", 
+    x = "Maximum Temperature(ºC)",
+    title = "Max Temperatures VS Min Temperatures in New York",
+    caption = "Data from NOAA"
+  ) +
+  viridis::scale_fill_viridis(option = "plasma") +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        legend.key.width = unit(0.8, "in"))
+ggplotly(temp_plot)
+
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+Year = c(1981:2010)
+trace_1 = noaa %>% filter(month == 1) %>% group_by(month, year) %>% summarise(mean_temp = mean(tmax))
+trace_7 = noaa %>% filter(month == 7) %>% group_by(month, year) %>% summarise(mean_temp = mean(tmax))
+dt = data.frame(Year, trace_1, trace_7)
+
+plot_ly(dt, x = ~Year, y = ~trace_1$mean_temp, name = 'Janurary', type = 'scatter', mode = 'lines') %>% 
+  add_trace(y = ~trace_7$mean_temp, name = 'July', mode = 'lines+markers') %>% 
+  layout(title = "Average Max Temperatures for January and July in New York")
+
+```
+
+### Chart C
+
+```{r}
+noaa %>%
+  filter(year == 2009 & month == 1) %>% 
+  group_by(day) %>% 
+  select(day, snow, snwd) %>% 
+  summarise(snow_mean = mean(snow),
+         snwd_mean = mean(snwd)) %>% 
+  plot_ly(x = ~day, y = ~snow_mean, type = "bar", name = "Snowfall") %>%
+  add_trace(y = ~snwd_mean, name = "Snow depth") %>%
+  layout(yaxis = list(title = 'mm'), barmode = 'stack') %>% 
+  layout(title = "Average Snowfall and Snowdepth for Jan 2009 in New York")
+
+```
+
