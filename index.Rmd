@@ -2,8 +2,28 @@
 title: "Tiffany Xi"
 output:
   html_document:
-    toc: true
-    toc_float: true
+    includes:
+      in_header: cover.html
 ---
 
 
+I am currently a MS student of [__Biostatistics__](https://www.mailman.columbia.edu/become-student/departments/biostatistics) in [Columbia University Mailman School of Public Health](https://www.mailman.columbia.edu/) and __data science__ enthusiast.
+
+### <span style="color:#2C85C2; font-family: Babas; font-size: 1em;">Hometown -- Education</span>
+
+I am from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), China.
+
+I was an exchange student in [University of Wisconsin-Madsion](https://www.wisc.edu/).
+
+I was graduated from [China Pharmaceutical University](http://en.cpu.edu.cn/) majoring in __Pharmaceutics__.
+
+[Read more about me...](resume.html)
+
+
+### <span style="color:#2C85C2; font-family: Babas; font-size: 1em;">Contact me</span>
+
+Address: 100 Haven Ave, Apt27-D New York, NY, 10032
+
+Email: hx2263@columbia.edu
+
+Phone: 608-960-2482
