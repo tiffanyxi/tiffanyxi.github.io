@@ -5,9 +5,9 @@ title: "<center>Huaqing(Tiffany) Xi</center>"
 
 > EDUCATION
 
-- Master of Science, Biostatistics-Method and Theory Track, Columbia University Mailman School of Public Health, New York, NY. Expected May 2020
+- Master of Science, Biostatistics-Method and Theory Track, [Columbia University Mailman School of Public Health](https://www.mailman.columbia.edu/), New York, NY. Expected May 2020
 
-- Bachelor of Science, Pharmaceutics, China Pharmaceutical University, Nanjing, China. 09/2014-06/2018
+- Bachelor of Science, Pharmaceutics, [China Pharmaceutical University](http://en.cpu.edu.cn/), Nanjing, China. 09/2014-06/2018
 
 - Exchange Student, University of Wisconsin-Madsion, Madsion, WI, US. 09/2017-06/2018
 
@@ -23,24 +23,24 @@ SPSS, Deap and SAS to perform regression analyses
 
 
 * Laboratory Research Assistant, Aldehyde Oxidase(AOX) Contribution to All-trans Retinoic Acid 
-Biosynthesis in Human Liver, University of Washington, School of Pharmcy, Seattle, WA
+Biosynthesis in Human Liver, [University of Washington](https://sop.washington.edu/), School of Pharmcy, Seattle, WA
     + Assisted research in three, NIH-funded Pharmaceutics and Pharmacokinetics studies. Worked collaboratively in a team of researchers and graduate assistants and presented at meetings with 12 attendees. 
     + Analyzed data of chromatography and visualization on data of AOX inhibitors effect on human liver aldehyde oxidase enzyme activity experiments
 
 > PROFESSIONAL EXPERIENCE
 
-* Data Analyst Intern in Pharmacy Department, Nanjing NO.1 Hospital, China                         
+* Data Analyst Intern in Pharmacy Department, [Nanjing NO.1 Hospital](http://www.njsdyyy.com.cn/), China                         
     + Accompanied doctors and pharmacists on rounds to gain experience in clinical and laboratorial administration
     + Worked with pharmacists to audit doctors' prescriptions and dispense drugs 
     + Utilized hospital drug usage database management to analyze total drug dosage and cost per patients, and control inappropriate use of antibiotics
 
 > PUBLICATION
 
-* The Influence of Comprehensive Pricing Reform on Economic Operating Efficiency of Urban Public hospitals, Chinese Hospital Management, Published
+* The Influence of Comprehensive Pricing Reform on Economic Operating Efficiency of Urban Public hospitals, Chinese Hospital Management, [Published](http://www.cqvip.com/qk/90642x/201804/674995370.html)
 
 > SKILLS
 
-* Professional: Conducting literature reviews (Chinese and English) and writing summaries
+* Professional: Conducting literature reviews and writing summaries
 * Computer: Proficiency in Microsoft suite, R, MATLAB, SPSS, SAS, DEAP and WinNonlin software and basic computer programming like C++, and Visual Basic, Python
 * Lab & Research:
     + Cell culture technique and basic usage of optical and electron microscope
