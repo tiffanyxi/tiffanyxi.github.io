@@ -1,5 +1,5 @@
 ---
-title:"About"
+title: "About"
 ---
 
 <center><img src = "images/logo.png" style = "width:60%"> </center>
