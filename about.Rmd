@@ -4,10 +4,7 @@ title:"About"
 
 <center><img src = "images/logo.png" style = "width:60%"> </center>
 
-<br />
-<br />
 
-<center><span style="color:#2C85C2; font-family: Babas; font-size: 2em;">Protecting Health, Saving Lives—Millions at a Time</span></center>
 
 <br/>
 
