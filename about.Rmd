@@ -1,3 +1,17 @@
 ---
-title: "About"
+title:"About"
 ---
+
+<center><img src = "images/logo.png" style = "width:60%"> </center>
+
+<br />
+<br />
+
+<center><span style="color:#2C85C2; font-family: Babas; font-size: 2em;">Protecting Health, Saving Lives—Millions at a Time</span></center>
+
+<br/>
+
+
+This is a personal website for Tiffany Xi.
+
+Built in October 2018, based on course [P8105-Data Science](http://p8105.com/), my instructor is [Jeff Goldsmith](https://github.com/jeff-goldsmith).
